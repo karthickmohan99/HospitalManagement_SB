@@ -17,7 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.h.model.Appointment;
 import com.h.service.AppointmentService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+
+@CrossOrigin(origins = {
+	    "https://hospital-management-ng-h9kx.vercel.app",
+	   
+	    "http://localhost:4200" 
+	})
 @RestController
 @RequestMapping("/api/appointment")
 public class AppointmentController {

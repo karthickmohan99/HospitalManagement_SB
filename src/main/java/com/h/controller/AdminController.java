@@ -12,7 +12,10 @@ import com.h.model.AdminLogin;
 import com.h.service.AdminRegisterService;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "https://hospital-management-ng-h9kx.vercel.app",
+	     "http://localhost:4200" 
+	})
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {

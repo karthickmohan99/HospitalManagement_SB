@@ -17,7 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.h.model.ScheduleSession;
 import com.h.service.ScheduleSessionService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "https://hospital-management-ng-h9kx.vercel.app",
+	     "http://localhost:4200" 
+	})
 @RestController
 @RequestMapping("/api/session")
 public class ScheduleSessionController {

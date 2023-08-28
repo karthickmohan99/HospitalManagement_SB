@@ -18,7 +18,10 @@ import com.h.model.PatientLogin;
 import com.h.service.PatientLoginService;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "https://hospital-management-ng-h9kx.vercel.app",
+	     "http://localhost:4200" 
+	})
 @RestController
 @RequestMapping("/api/patient")
 public class PatientController {
